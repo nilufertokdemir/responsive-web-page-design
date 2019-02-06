@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ornek Uygulama Uygulama</title>
+	<meta name="viewport" content="width = device-width ,initial-scale = 1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript" ></script>
+	<script src="js/bootstrap.min.js" 	type="text/javascript"></script>
+	<script>
+		$(document).ready(function(){
+
+			$(".btn").hover(function(){
+				var imgpath =$(this).attr("id");
+				$("#rsm").attr("src",imgpath);
+			});
+			
+			$("#bt1").click(function(){
+				$("#bt1").hide();
+				$(".p1").show();
+			});
+			$("#bt2").click(function(){
+				$("#bt2").hide();
+				$(".p2").show();
+			});
+			$("#bt3").click(function(){
+				$("#bt3").hide();
+				$(".p3").show();
+			});
+			$("#bt4").click(function(){
+				$("#bt4").hide();
+				$(".p4").show();
+			});
+		})
+	</script>
+	
+	
+</head>
+<body>
+	<div class="bg-light" style="height: 80px; padding-left:40px; ">
+		<div class="row align-items-center">
+			<div class="col-sm-1 align-left "><img  src="resimler/logo.png" style="width: 80px;height: 80px;"></div>
+			<div class="col-sm-4"><h3 class="display-4"><b>Haber Sitesi</b></h3></div>
+			<div class="col-sm-5 offset-2">
+				<button type="button" class="btn btn-outline-info">Yazarlar</button>
+				<button type="button" class="btn btn-outline-info">Gündem</button>
+				<button type="button" class="btn btn-outline-info">Ekonomi</button>
+				<button type="button" class="btn btn-outline-info">Teknoloji</button>
+				<button type="button" class="btn btn-outline-info">Sağlık</button>
+				<button type="button" class="btn btn-outline-info">Spor</button>
+			</div>
+		</div>
+	</div>
+	<div class="container mt-1">
+		<div class="row align-items-center">
+			<div class="col-sm-8">
+				<img  id="rsm" src="resimler/dijital1.jpg">
+			</div>	
+			<div class="col-sm-2 ml-2">
+				<a href="haberSayfası.html" ><button type="button" class="btn btn-outline-info"  id="resimler/dijital2.jpg" style="height: 40px;width: 250px;">Haber1</button>
+				</a><br> <br>
+				<a href="haberSayfasi2.html"><button type="button" class="btn btn-outline-info"  id="resimler/dijital3.jpg" style="height: 40px;width: 250px;">Haber2</button>
+				</a><br> <br>
+				<a href="haberSayfasi3.html"><button type="button" class="btn btn-outline-info"  id="resimler/dijital4.jpg"  style="height: 40px;width: 250px;">Haber3</button>
+				</a><br> <br>	
+				<a href="haberSayfasi4.html"><button type="button" class="btn btn-outline-info"  id="resimler/digital-revolution.jpg" style="height: 40px;width: 250px;">Haber4</button>
+				</a><br> <br>
+				<a href="haberSayfasi5.html"><button type="button" class="btn btn-outline-info" id="resimler/altresim1.jpg"  style="height: 40px;width: 250px;">Haber5</button>
+				</a><br> <br>
+				<a href="haberSayfasi6.html"><button type="button" class="btn btn-outline-info"  id="resimler/digital-rev.jpg"  style="height: 40px;width: 250px;">Haber6</button>
+				</a>
+			</div>
+		</div>	
+		<hr>
+		<div class="text-center">
+			<h2>Dijital Dönüşüm Platformu</h2>
+		</div>
+
+		<div class="row align-items-start" style="background: grey;  border-width: 4px;border-left-style: solid;">
+			<div class="col-sm-3" style="border-left-style: solid; ">
+				<p><img src="resimler/digital-revolution.jpg" class="w-100"></p>
+					<p><h4>Dijital Dönüşüm</h4></p>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+				</p>
+				<p><a href="haberSayfası.html"><button type="button" class="btn btn-primary" id="bt1">Devamını Oku</button></a></p>
+				
+			</div>
+
+
+			<div class="col-sm-3" style="border-left-style: solid; ">
+				<p><img src="resimler/digital-rev.jpg" class="w-100"></p>
+					<p><h4>Sanal Gerçeklik</h4></p>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodol Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 	
+				</p>
+				<p><a href="haberSayfasi2.html"><button type="button" class="btn btn-primary" id="bt2">Devamını Oku</button></a></p>
+				
+			</div>
+
+			<div class="col-sm-3 " style="border-left-style: solid; ">
+				<p><img class="w-100" src="resimler/dijital_donusum.jpg" ></p>
+					<p><h4>Endüstri 4.0</h4></p>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					 esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+				<p><a href="haberSayfasi3.html"><button type="button" class="btn btn-primary" id="bt3">Devamını Oku</button></a></p>
+				
+			</div>
+
+
+			<div class="col-sm-3 " style="border-left-style: solid; ">
+				<p ><img class="w-100" src="resimler/dijitallesme.jpg" ></p>
+					<p><h4>Dijital Dünya</h4></p>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+				</p>
+
+				<p><a href="haberSayfasi4.html"><button type="button" class="btn btn-primary" id="bt4">Devamını Oku</button></a></p>
+				
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-6" >
+				<p><img class="w-100" src="resimler/altresim1.jpg" ></p>
+			</div>
+			<div class="col-sm-6" >
+				<p><img class="w-100" src="resimler/altresim2.jpg" ></p>
+			</div>
+			</div>
+			
+		</div>
+
+
+
+	
+
+</body>
+</html>
